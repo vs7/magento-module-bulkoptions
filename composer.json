@@ -1,5 +1,5 @@
 {
-    "name": "vs7/bulkoptions",
+    "name": "vs7/magento-module-bulkoptions",
     "type": "magento-module",
     "version": "0.1.0",
     "license": "OSL-3.0",
@@ -20,7 +20,7 @@
             "homepage": "https://vs7.io"
         }
     ],
-    "homepage": "https://github.com/vs7/bulkoptions",
+    "homepage": "https://github.com/vs7/magento-module-bulkoptions",
     "require": {
         "magento-hackathon/magento-composer-installer": "*"
     }
