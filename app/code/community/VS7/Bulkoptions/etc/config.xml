@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <VS7_Bulkoptions>
+            <version>0.1.0</version>
+        </VS7_Bulkoptions>
+    </modules>
+    <global>
+        <blocks>
+            <adminhtml>
+                <rewrite>
+                    <catalog_product_attribute_edit_tab_options>VS7_Bulkoptions_Block_Adminhtml_Catalog_Product_Attribute_Edit_Tab_Bulkoptions</catalog_product_attribute_edit_tab_options>
+                </rewrite>
+            </adminhtml>
+        </blocks>
+        <helpers>
+            <vs7_bulkoptions>
+                <class>VS7_Bulkoptions_Helper</class>
+            </vs7_bulkoptions>
+        </helpers>
+    </global>
+    <adminhtml>
+        <layout>
+            <updates>
+                <vs7_bulkoptions>
+                    <file>vs7_bulkoptions.xml</file>
+                </vs7_bulkoptions>
+            </updates>
+        </layout>
+    </adminhtml>
+</config>

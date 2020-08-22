@@ -1,0 +1,5 @@
+app/code/community/VS7/Bulkoptions                                 app/code/community/VS7/Bulkoptions
+app/etc/modules/VS7_Bulkoptions.xml                                app/etc/modules/VS7_Bulkoptions.xml
+app/design/adminhtml/default/default/layout/vs7_bulkoptions.xml    app/design/adminhtml/default/default/layout/vs7_bulkoptions.xml
+app/design/adminhtml/default/default/template/vs7_bulkoptions      app/design/adminhtml/default/default/template/vs7_bulkoptions
+skin/adminhtml/default/default/vs7_bulkoptions                     skin/adminhtml/default/default/vs7_bulkoptions

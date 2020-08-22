@@ -1,0 +1,62 @@
+<div>
+    <ul class="messages">
+        <li class="notice-msg">
+            <ul>
+                <li><?php echo $this->__('If you do not specify an option value for a specific store view then the default (Admin) value will be used.') ?></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<div class="entity-edit">
+    <div class="entry-edit-head">
+        <h4 class="icon-head head-edit-form fieldset-legend"><?php echo $this->__('Manage Titles (Size, Color, etc.)') ?></h4>
+    </div>
+    <div class="box">
+        <div class="hor-scroll">
+            <table class="dynamic-grid" cellspacing="0" id="attribute-labels-table">
+                <tr>
+                    <?php foreach ($this->getStores() as $_store): ?>
+                        <th><?php echo $_store->getName() ?></th>
+                    <?php endforeach; ?>
+                </tr>
+                <tr>
+                    <?php $_labels = $this->getLabelValues() ?>
+                    <?php foreach ($this->getStores() as $_store): ?>
+                        <td>
+                            <input class="input-text<?php if($_store->getId()==0): ?> required-option<?php endif; ?>" type="text" name="frontend_label[<?php echo $_store->getId() ?>]" value="<?php echo $this->htmlEscape($_labels[$_store->getId()]) ?>"<?php if ($this->getReadOnly()):?> disabled="disabled"<?php endif;?>/>
+                        </td>
+                    <?php endforeach; ?>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<br/>
+
+<div class="entity-edit" id="manage-options-panel">
+    <div class="entry-edit-head">
+        <h4 class="icon-head head-edit-form fieldset-legend"><?php echo $this->__('Manage Options (values of your attribute)') ?></h4>
+    </div>
+    <div class="box">
+        <div class="hor-scroll">
+            <?php echo $this->getAddNewButtonHtml(); ?>
+            <div id="bulkoptions"></div>
+            <div id="bulkoptions-inputs"></div>
+        </div>
+        <input type="hidden" id="option-count-check" value="" />
+        <input type="hidden" id="option" value="" />
+    </div>
+</div>
+
+<script type="text/javascript">
+    //<![CDATA[
+    var store0_validator_fn = /.+/;
+
+    var data = <?php echo $this->getDataJson(); ?>;
+    var dataById = <?php echo $this->getDataByIdJson(); ?>;
+    var rowHeaders = <?php echo $this->getRowHeadersJson(); ?>;
+    var colHeaders = <?php echo $this->getColHeadersJson(); ?>;
+    var columns = <?php echo $this->getColMappingsJson(); ?>;
+    //]]>
+</script>

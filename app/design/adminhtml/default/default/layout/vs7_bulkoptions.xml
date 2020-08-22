@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<layout>
+    <adminhtml_catalog_product_attribute_edit>
+        <reference name="head">
+            <!--jQuery-->
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>vs7_bulkoptions/jquery/jquery-2.1.1.min.js</name>
+            </action>
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>vs7_bulkoptions/jquery/jquery.noconflict.js</name>
+            </action>
+            <!--HandsonTable-->
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>vs7_bulkoptions/jquery.handsontable/jquery.handsontable.full.js</name>
+            </action>
+            <action method="addCss">
+                <stylesheet>vs7_bulkoptions/jquery.handsontable/jquery.handsontable.full.min.css</stylesheet>
+            </action>
+            <!--QTip-->
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>vs7_bulkoptions/jquery.qtip/jquery.qtip.min.js</name>
+            </action>
+            <action method="addCss">
+                <stylesheet>vs7_bulkoptions/jquery.qtip/jquery.qtip.min.css</stylesheet>
+            </action>
+            <!--Module JS & CSS-->
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>vs7_bulkoptions/bulkoptions.js</name>
+            </action>
+            <action method="addCss">
+                <stylesheet>vs7_bulkoptions/bulkoptions.css</stylesheet>
+            </action>
+        </reference>
+    </adminhtml_catalog_product_attribute_edit>
+</layout>

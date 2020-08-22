@@ -1,0 +1,27 @@
+{
+    "name": "vs7/bulkoptions",
+    "type": "magento-module",
+    "version": "0.1.0",
+    "license": "OSL-3.0",
+    "description": "VS7 Bulk Options",
+    "keywords": [
+        "vs7",
+        "option",
+        "table",
+        "bulk",
+        "excel",
+        "admin",
+        "magento"
+    ],
+    "authors": [
+        {
+            "name": "VS7, Vladislav Gevlich",
+            "email": "vs7develop@gmail.com",
+            "homepage": "https://vs7.io"
+        }
+    ],
+    "homepage": "https://github.com/vs7/bulkoptions",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
