@@ -3,7 +3,7 @@
     "type": "magento-module",
     "version": "0.1.0",
     "license": "OSL-3.0",
-    "description": "VS7 Bulk Options",
+    "description": "Bulk Options for Magento 2. Excel-like table for attribute options.",
     "keywords": [
         "vs7",
         "option",
